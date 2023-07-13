@@ -14,6 +14,53 @@
 * #### 打开成功<br>
 ![open-git-bush-2](res/open-git-bash2.png)<br>
 ### 2.2 在vscode中使用git<br>
-
 ***
-## 3 git 命令
+## 3 git 使用方法<br>
+### 3.1 个人信息配置<br>
+```
+$ git config --global user.name <username> # 设置用户名
+$ git config --global user.email <usermail> # 设置用户信箱
+# 用户名与信箱无需为真
+$ git config --global -l # 查看用户信息
+```
+***
+### 3.2 创建本地仓库<br>
+```
+$ git init # 初始化一个空仓库
+```
+```
+$ git clone <url> # 拷贝别人的仓库
+```
+***
+### 3.3 文件状态 --> `git add` 和 `git commit`<br>
+仓库内的文件共有四个状态，<b>未跟踪</b>，<b>未修改</b>，<b>已修改</b>，<b>暂存</b>。
+其文件转换状态图大致如下。<br>
+![sequ](res/sequenceFile.png)<br>
+* 当新建一个仓库，或向仓库添加一个新的文件时，这个文件会以<b>`未跟踪 <Untracked files>`</b>状态存在。
+* 当对仓库内的文件进行修改后，文件类型会变为<b>`已修改 <Changes not staged for commit>`</b>状态。
+* 我们首先需要使用<b>`"git add <file>"`</b>或<b>`"git add ."`</b>（点代表当前目录及其子目录内全部文件），使这两种类型的文件，变成<b>`暂存 <Changes to be committed>`</b>状态。
+
+通过<b>`"git status"`</b>命令查看仓库状态：
+```
+$ git status    # 查看仓库状态
+----------------- 以下为返回信息 -------------------------------------------
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:    # 暂存的文件
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gitadd.txt
+
+Changes not staged for commit:  # 已修改的文件
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:    # 未追踪的文件
+  (use "git add <file>..." to include in what will be committed)
+        newfile.txt
+---------------------------------------------------------------------------
+# 一般情况懂点英语都可以看懂什么意思
+```
+
+当文件都成为<b>`暂存 <Changes to be committed>`</b>状态后，我们就可以使用<b>`"git commit -m "<update notes>"`</b>提交了。所有的文件也都会变成未修改状态。
