@@ -20,7 +20,7 @@
 ```
 $ git config --global user.name <username> # 设置用户名
 $ git config --global user.email <usermail> # 设置用户信箱
-# 用户名与信箱无需为真
+# 用户名与信箱无需真实存在
 $ git config --global -l # 查看用户信息
 ```
 ***
@@ -33,6 +33,13 @@ $ git clone <url> # 拷贝别人的仓库
 ```
 ***
 ### 3.3 文件状态 --> `git add` 和 `git commit`<br>
+#### 省流：
+```
+$ git add .
+$ git commit -m ""
+# 就这么搞就完事了
+```
+#### 非省流：
 仓库内的文件共有四个状态，<b>未跟踪</b>，<b>未修改</b>，<b>已修改</b>，<b>暂存</b>。
 其文件转换状态图大致如下。<br>
 ![sequ](res/sequenceFile.png)<br>
@@ -90,6 +97,11 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
 ...
 ```
 很明显可以看出，最近的一次提交被撤销了，同时文件状态也变成了提交前的状态。<br>
+***
 ### 3.4 链接远程仓库 GitHub
+#### 省流：
 废话不多说，直接看GitHub官方教程。<br>
 ![remote](res/remote.png)<br>
+# 说实话，到这里就真真完全够用了。
+## 因为这个教程就是这么push上来的。
+***
