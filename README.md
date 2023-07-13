@@ -1,5 +1,4 @@
 # <center>How-to-use-git</center>
-***
 ## 1 安装git<br>
 * #### 登录git官网 https://git-scm.com/<br>
 ![https://git-scm.com/](res/git-scm.com.png)<br>
@@ -14,7 +13,7 @@
 * #### 打开成功<br>
 ![open-git-bush-2](res/open-git-bash2.png)<br>
 ### 2.2 在vscode中使用git<br>
-***
+
 ## 3 git 使用方法<br>
 ### 3.1 个人信息配置<br>
 ```
@@ -23,7 +22,7 @@ $ git config --global user.email <usermail> # 设置用户信箱
 # 用户名与信箱无需真实存在
 $ git config --global -l # 查看用户信息
 ```
-***
+
 ### 3.2 创建本地仓库<br>
 ```
 $ git init # 初始化一个空仓库
@@ -31,7 +30,7 @@ $ git init # 初始化一个空仓库
 ```
 $ git clone <url> # 拷贝别人的仓库
 ```
-***
+
 ### 3.3 文件状态 --> `git add` 和 `git commit`<br>
 #### 省流：
 ```
@@ -97,11 +96,11 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
 ...
 ```
 很明显可以看出，最近的一次提交被撤销了，同时文件状态也变成了提交前的状态。<br>
-***
+
 ### 3.4 链接远程仓库 GitHub
 #### 省流：
 废话不多说，直接看GitHub官方教程。<br>
 ![remote](res/remote.png)<br>
-# 说实话，到这里就真真完全够用了。
-## 因为这个教程就是这么push上来的。
-***
+###说实话，到这里就真真完全够用了。
+##因为这个教程就是这么push上来的。
+
