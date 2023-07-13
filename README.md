@@ -91,7 +91,5 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
 ```
 很明显可以看出，最近的一次提交被撤销了，同时文件状态也变成了提交前的状态。<br>
 ### 3.4 链接远程仓库 GitHub
-废话不多说，直接开链（主要是我也不懂）。
-```
-$ git remote add origin <url> 
-```
+废话不多说，直接看GitHub官方教程。<br>
+![remote](res/remote.png)<br>
