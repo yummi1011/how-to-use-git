@@ -6,7 +6,7 @@
 * #### 选择并下载对应的版本<br>
 ![https://git-scm.com/download/win](res/git-download.png)<br>
 * #### 安装<br>
-* 
+
 ## 2 开始使用git<br>
 ### 2.1 使用git bash<br>
 * #### 在目标文件夹，右键-->显示更多选项(win11)-->Open Git Bash Here<br>
