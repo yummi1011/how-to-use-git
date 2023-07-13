@@ -1,11 +1,12 @@
 # <center>How-to-use-git</center>
+
 ## 1 安装git<br>
 * #### 登录git官网 https://git-scm.com/<br>
 ![https://git-scm.com/](res/git-scm.com.png)<br>
 * #### 选择并下载对应的版本<br>
 ![https://git-scm.com/download/win](res/git-download.png)<br>
 * #### 安装<br>
-***
+* 
 ## 2 开始使用git<br>
 ### 2.1 使用git bash<br>
 * #### 在目标文件夹，右键-->显示更多选项(win11)-->Open Git Bash Here<br>
@@ -22,7 +23,6 @@ $ git config --global user.email <usermail> # 设置用户信箱
 # 用户名与信箱无需真实存在
 $ git config --global -l # 查看用户信息
 ```
-
 ### 3.2 创建本地仓库<br>
 ```
 $ git init # 初始化一个空仓库
@@ -30,9 +30,8 @@ $ git init # 初始化一个空仓库
 ```
 $ git clone <url> # 拷贝别人的仓库
 ```
-
 ### 3.3 文件状态 --> `git add` 和 `git commit`<br>
-#### 省流：
+## 省流：
 ```
 $ git add .
 $ git commit -m ""
@@ -98,9 +97,10 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
 很明显可以看出，最近的一次提交被撤销了，同时文件状态也变成了提交前的状态。<br>
 
 ### 3.4 链接远程仓库 GitHub
-#### 省流：
+## 省流：
 废话不多说，直接看GitHub官方教程。<br>
 ![remote](res/remote.png)<br>
-###说实话，到这里就真真完全够用了。
-##因为这个教程就是这么push上来的。
+
+### 说实话，到这里就真真完全够用了。
+## 因为这个教程就是这么push上来的。
 
