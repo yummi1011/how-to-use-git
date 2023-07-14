@@ -1,14 +1,20 @@
 # <center>How-to-use-git</center>
 ## 省流：
 ```
-$ git init
-$ git add .
-$ git commit -m "your commit note"
-$ git branch -M main
-$ git remote add origin <url>
-$ git push -u origin main
+$ git init  
+$ git add <file> # 将文件添加至暂存状态
+$ git commit -m "<note>"  # 偷懒也可以用 git commit -am "<note>"，相当于这句加上面一句
+$ git branch -m <branch name> # 重命名分支
+$ git checkout <branch name> # 切换分支
+$ git remote add origin <url> # 添加远程链接
+$ git push -u origin main # 推送本地提交至远程链接
+# 使用过一次-u后，之后的推送就只用pit push即可
 ```
-
+### 相关文档：
+* git官方文档：https://git-scm.com/book/zh/v2
+* github文档：https://docs.github.com/zh/get-started/quickstart
+* vscode：https://code.visualstudio.com/docs/sourcecontrol/overview
+   
 ## 1 安装git<br>
 * #### 登录git官网 https://git-scm.com/<br>
 ![https://git-scm.com/](res/git-scm.com.png)<br>
