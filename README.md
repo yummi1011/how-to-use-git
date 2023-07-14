@@ -55,7 +55,7 @@ $ git clone <url> # 拷贝别人的仓库
 * 当对仓库内的文件进行修改后，文件类型会变为<b>`已修改 <Changes not staged for commit>`</b>状态。
 * 我们首先需要使用<b>`"git add <file>"`</b>或<b>`"git add ."`</b>（点代表当前目录及其子目录内全部文件），使这两种类型的文件，变成<b>`暂存 <Changes to be committed>`</b>状态。
 
-通过<b>`"git status"`</b>命令查看仓库状态：
+<b>`"git status"`</b>命令查看仓库状态：
 ```
 $ git status    # 查看仓库状态
 ----------------- 以下为返回信息 -------------------------------------------
