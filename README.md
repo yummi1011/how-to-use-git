@@ -3,12 +3,12 @@
 ```
 $ git init  
 $ git add <file> # 将文件添加至暂存状态
-$ git commit -m "<note>"  # 偷懒也可以用 git commit -am "<note>"，相当于这句加上面一句
-$ git branch -m <branch name> # 重命名分支
-$ git checkout <branch name> # 切换分支
+$ git commit -m "<note>"  # 提交暂存文件
+# 偷懒也可以用 git commit -am "<note>"，相当于这句加上面一句
 $ git remote add origin <url> # 添加远程链接
 $ git push -u origin main # 推送本地提交至远程链接
-# 使用过一次-u后，之后的推送就只用pit push即可
+$ git pull -u origin main # 拉取远程链接提交至本地
+# 使用-u设置默认远程分支后，之后的推拉就只用git push/git pull即可
 ```
 ### 相关文档：
 * git官方文档：https://git-scm.com/book/zh/v2
