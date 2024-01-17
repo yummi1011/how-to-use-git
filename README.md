@@ -1,88 +1,88 @@
 # <center>How-to-use-git</center>
-## Ê¡Á÷£º
+## çœæµï¼š
 ```
 $ git init  
-$ git add <file> # ½«ÎÄ¼şÌí¼ÓÖÁÔİ´æ×´Ì¬
-$ git commit -m "<note>"  # Ìá½»Ôİ´æÎÄ¼ş
-# ÍµÀÁÒ²¿ÉÒÔÓÃ git commit -am "<note>"£¬Ïàµ±ÓÚÕâ¾ä¼ÓÉÏÃæÒ»¾ä
-$ git remote add origin <url> # Ìí¼ÓÔ¶³ÌÁ´½Ó
-$ git push -u origin main # ÍÆËÍ±¾µØÌá½»ÖÁÔ¶³ÌÁ´½Ó
-$ git pull -u origin main # À­È¡Ô¶³ÌÁ´½ÓÌá½»ÖÁ±¾µØ
-# Ê¹ÓÃ-uÉèÖÃÄ¬ÈÏÔ¶³Ì·ÖÖ§ºó£¬Ö®ºóµÄÍÆÀ­¾ÍÖ»ÓÃgit push/git pull¼´¿É
+$ git add <file> # å°†æ–‡ä»¶æ·»åŠ è‡³æš‚å­˜çŠ¶æ€
+$ git commit -m "<note>"  # æäº¤æš‚å­˜æ–‡ä»¶
+# å·æ‡’ä¹Ÿå¯ä»¥ç”¨ git commit -am "<note>"ï¼Œç›¸å½“äºè¿™å¥åŠ ä¸Šé¢ä¸€å¥
+$ git remote add origin <url> # æ·»åŠ è¿œç¨‹é“¾æ¥
+$ git push -u origin main # æ¨é€æœ¬åœ°æäº¤è‡³è¿œç¨‹é“¾æ¥
+$ git pull -u origin main # æ‹‰å–è¿œç¨‹é“¾æ¥æäº¤è‡³æœ¬åœ°
+# ä½¿ç”¨-uè®¾ç½®é»˜è®¤è¿œç¨‹åˆ†æ”¯åï¼Œä¹‹åçš„æ¨æ‹‰å°±åªç”¨git push/git pullå³å¯
 ```
-### Ïà¹ØÎÄµµ£º
-* git¹Ù·½ÎÄµµ£ºhttps://git-scm.com/book/zh/v2
-* githubÎÄµµ£ºhttps://docs.github.com/zh/get-started/quickstart
-* vscode£ºhttps://code.visualstudio.com/docs/sourcecontrol/overview
+### ç›¸å…³æ–‡æ¡£ï¼š
+* gitå®˜æ–¹æ–‡æ¡£ï¼šhttps://git-scm.com/book/zh/v2
+* githubæ–‡æ¡£ï¼šhttps://docs.github.com/zh/get-started/quickstart
+* vscodeï¼šhttps://code.visualstudio.com/docs/sourcecontrol/overview
    
-## 1 °²×°git<br>
-* #### µÇÂ¼git¹ÙÍø https://git-scm.com/<br>
+## 1 å®‰è£…git<br>
+* #### ç™»å½•gitå®˜ç½‘ https://git-scm.com/<br>
 ![https://git-scm.com/](res/git-scm.com.png)<br>
-* #### Ñ¡Ôñ²¢ÏÂÔØ¶ÔÓ¦µÄ°æ±¾<br>
+* #### é€‰æ‹©å¹¶ä¸‹è½½å¯¹åº”çš„ç‰ˆæœ¬<br>
 ![https://git-scm.com/download/win](res/git-download.png)<br>
-* #### °²×°<br>
+* #### å®‰è£…<br>
 
-## 2 ¿ªÊ¼Ê¹ÓÃgit<br>
-### 2.1 Ê¹ÓÃgit bash<br>
-* #### ÔÚÄ¿±êÎÄ¼ş¼Ğ£¬ÓÒ¼ü-->ÏÔÊ¾¸ü¶àÑ¡Ïî(win11)-->Open Git Bash Here<br>
+## 2 å¼€å§‹ä½¿ç”¨git<br>
+### 2.1 ä½¿ç”¨git bash<br>
+* #### åœ¨ç›®æ ‡æ–‡ä»¶å¤¹ï¼Œå³é”®-->æ˜¾ç¤ºæ›´å¤šé€‰é¡¹(win11)-->Open Git Bash Here<br>
 ![open-git-bush](res/open-git-bash.png)<br>
-* #### ´ò¿ª³É¹¦<br>
+* #### æ‰“å¼€æˆåŠŸ<br>
 ![open-git-bush-2](res/open-git-bash2.png)<br>
-### 2.2 ÔÚvscodeÖĞÊ¹ÓÃgit<br>
+### 2.2 åœ¨vscodeä¸­ä½¿ç”¨git<br>
 
-## 3 git Ê¹ÓÃ·½·¨<br>
-### 3.1 ¸öÈËĞÅÏ¢ÅäÖÃ<br>
+## 3 git ä½¿ç”¨æ–¹æ³•<br>
+### 3.1 ä¸ªäººä¿¡æ¯é…ç½®<br>
 ```
-$ git config --global user.name <username> # ÉèÖÃÓÃ»§Ãû
-$ git config --global user.email <usermail> # ÉèÖÃÓÃ»§ĞÅÏä
-# ÓÃ»§ÃûÓëĞÅÏäÎŞĞèÕæÊµ´æÔÚ
-$ git config --global -l # ²é¿´ÓÃ»§ĞÅÏ¢
+$ git config --global user.name <username> # è®¾ç½®ç”¨æˆ·å
+$ git config --global user.email <usermail> # è®¾ç½®ç”¨æˆ·ä¿¡ç®±
+# ç”¨æˆ·åä¸ä¿¡ç®±æ— éœ€çœŸå®å­˜åœ¨
+$ git config --global -l # æŸ¥çœ‹ç”¨æˆ·ä¿¡æ¯
 ```
-### 3.2 ´´½¨±¾µØ²Ö¿â<br>
+### 3.2 åˆ›å»ºæœ¬åœ°ä»“åº“<br>
 ```
-$ git init # ³õÊ¼»¯Ò»¸ö¿Õ²Ö¿â
+$ git init # åˆå§‹åŒ–ä¸€ä¸ªç©ºä»“åº“
 ```
-* ´ÓgithubÉÏclone±ğÈËµÄ²Ö¿â<br>
+* ä»githubä¸Šcloneåˆ«äººçš„ä»“åº“<br>
 ![url](res/clone-url.png)<br>
 ```
-$ git clone <url> # ¿½±´±ğÈËµÄ²Ö¿â
+$ git clone <url> # æ‹·è´åˆ«äººçš„ä»“åº“
 ```
-### 3.3 ÎÄ¼ş×´Ì¬ --> `git add` ºÍ `git commit`<br>
-²Ö¿âÄÚµÄÎÄ¼ş¹²ÓĞËÄ¸ö×´Ì¬£¬<b>Î´¸ú×Ù</b>£¬<b>Î´ĞŞ¸Ä</b>£¬<b>ÒÑĞŞ¸Ä</b>£¬<b>Ôİ´æ</b>¡£
-ÆäÎÄ¼ş×ª»»×´Ì¬Í¼´óÖÂÈçÏÂ¡£<br>
+### 3.3 æ–‡ä»¶çŠ¶æ€ --> `git add` å’Œ `git commit`<br>
+ä»“åº“å†…çš„æ–‡ä»¶å…±æœ‰å››ä¸ªçŠ¶æ€ï¼Œ<b>æœªè·Ÿè¸ª</b>ï¼Œ<b>æœªä¿®æ”¹</b>ï¼Œ<b>å·²ä¿®æ”¹</b>ï¼Œ<b>æš‚å­˜</b>ã€‚
+å…¶æ–‡ä»¶è½¬æ¢çŠ¶æ€å›¾å¤§è‡´å¦‚ä¸‹ã€‚<br>
 ![sequ](res/sequenceFile.png)<br>
-* µ±ĞÂ½¨Ò»¸ö²Ö¿â£¬»òÏò²Ö¿âÌí¼ÓÒ»¸öĞÂµÄÎÄ¼şÊ±£¬Õâ¸öÎÄ¼ş»áÒÔ<b>`Î´¸ú×Ù <Untracked files>`</b>×´Ì¬´æÔÚ¡£
-* µ±¶Ô²Ö¿âÄÚµÄÎÄ¼ş½øĞĞĞŞ¸Äºó£¬ÎÄ¼şÀàĞÍ»á±äÎª<b>`ÒÑĞŞ¸Ä <Changes not staged for commit>`</b>×´Ì¬¡£
-* ÎÒÃÇÊ×ÏÈĞèÒªÊ¹ÓÃ<b>`"git add <file>"`</b>»ò<b>`"git add ."`</b>£¨µã´ú±íµ±Ç°Ä¿Â¼¼°Æä×ÓÄ¿Â¼ÄÚÈ«²¿ÎÄ¼ş£©£¬Ê¹ÕâÁ½ÖÖÀàĞÍµÄÎÄ¼ş£¬±ä³É<b>`Ôİ´æ <Changes to be committed>`</b>×´Ì¬¡£
+* å½“æ–°å»ºä¸€ä¸ªä»“åº“ï¼Œæˆ–å‘ä»“åº“æ·»åŠ ä¸€ä¸ªæ–°çš„æ–‡ä»¶æ—¶ï¼Œè¿™ä¸ªæ–‡ä»¶ä¼šä»¥<b>`æœªè·Ÿè¸ª <Untracked files>`</b>çŠ¶æ€å­˜åœ¨ã€‚
+* å½“å¯¹ä»“åº“å†…çš„æ–‡ä»¶è¿›è¡Œä¿®æ”¹åï¼Œæ–‡ä»¶ç±»å‹ä¼šå˜ä¸º<b>`å·²ä¿®æ”¹ <Changes not staged for commit>`</b>çŠ¶æ€ã€‚
+* æˆ‘ä»¬é¦–å…ˆéœ€è¦ä½¿ç”¨<b>`"git add <file>"`</b>æˆ–<b>`"git add ."`</b>ï¼ˆç‚¹ä»£è¡¨å½“å‰ç›®å½•åŠå…¶å­ç›®å½•å†…å…¨éƒ¨æ–‡ä»¶ï¼‰ï¼Œä½¿è¿™ä¸¤ç§ç±»å‹çš„æ–‡ä»¶ï¼Œå˜æˆ<b>`æš‚å­˜ <Changes to be committed>`</b>çŠ¶æ€ã€‚
 
-<b>`"git status"`</b>ÃüÁî²é¿´²Ö¿â×´Ì¬£º
+<b>`"git status"`</b>å‘½ä»¤æŸ¥çœ‹ä»“åº“çŠ¶æ€ï¼š
 ```
-$ git status    # ²é¿´²Ö¿â×´Ì¬
------------------ ÒÔÏÂÎª·µ»ØĞÅÏ¢ -------------------------------------------
+$ git status    # æŸ¥çœ‹ä»“åº“çŠ¶æ€
+----------------- ä»¥ä¸‹ä¸ºè¿”å›ä¿¡æ¯ -------------------------------------------
 On branch main
 Your branch is up to date with 'origin/main'.
 
-Changes to be committed:    # Ôİ´æµÄÎÄ¼ş
+Changes to be committed:    # æš‚å­˜çš„æ–‡ä»¶
   (use "git restore --staged <file>..." to unstage)
         new file:   gitadd.txt
 
-Changes not staged for commit:  # ÒÑĞŞ¸ÄµÄÎÄ¼ş
+Changes not staged for commit:  # å·²ä¿®æ”¹çš„æ–‡ä»¶
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   README.md
 
-Untracked files:    # Î´×·×ÙµÄÎÄ¼ş
+Untracked files:    # æœªè¿½è¸ªçš„æ–‡ä»¶
   (use "git add <file>..." to include in what will be committed)
         newfile.txt
 ---------------------------------------------------------------------------
-# Ò»°ãÇé¿ö¶®µãÓ¢Óï¶¼¿ÉÒÔ¿´¶®Ê²Ã´ÒâË¼
+# ä¸€èˆ¬æƒ…å†µæ‡‚ç‚¹è‹±è¯­éƒ½å¯ä»¥çœ‹æ‡‚ä»€ä¹ˆæ„æ€
 ```
 
-µ±ÎÄ¼ş¶¼³ÉÎª<b>`Ôİ´æ <Changes to be committed>`</b>×´Ì¬ºó£¬ÎÒÃÇ¾Í¿ÉÒÔÊ¹ÓÃ<b>`"git commit -m "<update notes>"`</b>Ìá½»ÁË¡£ËùÓĞµÄÎÄ¼şÒ²¶¼»á±ä³ÉÎ´ĞŞ¸Ä×´Ì¬¡£
+å½“æ–‡ä»¶éƒ½æˆä¸º<b>`æš‚å­˜ <Changes to be committed>`</b>çŠ¶æ€åï¼Œæˆ‘ä»¬å°±å¯ä»¥ä½¿ç”¨<b>`"git commit -m "<update notes>"`</b>æäº¤äº†ã€‚æ‰€æœ‰çš„æ–‡ä»¶ä¹Ÿéƒ½ä¼šå˜æˆæœªä¿®æ”¹çŠ¶æ€ã€‚
 
-<b>`"git log"`</b> ¿ÉÒÔ²é¿´ËùÓĞµÄÌá½»ÀúÊ·¡£<b>`"git reset head~ --soft"`</b>¿ÉÒÔ³·ÏúÉÏÒ»´ÎÌá½»¡£
+<b>`"git log"`</b> å¯ä»¥æŸ¥çœ‹æ‰€æœ‰çš„æäº¤å†å²ã€‚<b>`"git reset head~ --soft"`</b>å¯ä»¥æ’¤é”€ä¸Šä¸€æ¬¡æäº¤ã€‚
 ```
-& git log                       # ²é¿´Ìá½»¼ÇÂ¼
+& git log                       # æŸ¥çœ‹æäº¤è®°å½•
 commit 9b26f8a111af2cb509a4b8269b42b23289a54769 (HEAD -> main, origin/main)
 Author: sunlin <123@163.com>
 Date:   Fri Jul 14 00:34:34 2023 +0800
@@ -95,8 +95,8 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
 
     update
 .....
-$ git reset head~ --soft        # ³·ÏúÉÏÒ»´ÎÌá½»
-$ git log                       # ²é¿´Ìá½»¼ÇÂ¼
+$ git reset head~ --soft        # æ’¤é”€ä¸Šä¸€æ¬¡æäº¤
+$ git log                       # æŸ¥çœ‹æäº¤è®°å½•
 commit d25b1dd69e6c31e07b3830d95ce4cf4b9c5a8d02 (HEAD -> main)
 Author: sunlin <zbsl1@163.com>
 Date:   Thu Jul 13 23:30:18 2023 +0800
@@ -104,16 +104,16 @@ Date:   Thu Jul 13 23:30:18 2023 +0800
     update
 ...
 ```
-ºÜÃ÷ÏÔ¿ÉÒÔ¿´³ö£¬×î½üµÄÒ»´ÎÌá½»±»³·ÏúÁË£¬Í¬Ê±ÎÄ¼ş×´Ì¬Ò²±ä³ÉÁËÌá½»Ç°µÄ×´Ì¬¡£<br>
+å¾ˆæ˜æ˜¾å¯ä»¥çœ‹å‡ºï¼Œæœ€è¿‘çš„ä¸€æ¬¡æäº¤è¢«æ’¤é”€äº†ï¼ŒåŒæ—¶æ–‡ä»¶çŠ¶æ€ä¹Ÿå˜æˆäº†æäº¤å‰çš„çŠ¶æ€ã€‚<br>
 
-### 3.4 Á´½ÓÔ¶³Ì²Ö¿â GitHub
-·Ï»°²»¶àËµ£¬Ö±½Ó¿´GitHub¹Ù·½½Ì³Ì¡£<br>
+### 3.4 é“¾æ¥è¿œç¨‹ä»“åº“ GitHub
+åºŸè¯ä¸å¤šè¯´ï¼Œç›´æ¥çœ‹GitHubå®˜æ–¹æ•™ç¨‹ã€‚<br>
 ![remote](res/remote.png)<br>
 
-### ËµÊµ»°£¬µ½ÕâÀï¾ÍÕæÕæÍêÈ«¹»ÓÃÁË¡£
-### ÒòÎªÕâ¸ö½Ì³Ì¾ÍÊÇÕâÃ´pushÉÏÀ´µÄ¡£
+### è¯´å®è¯ï¼Œåˆ°è¿™é‡Œå°±çœŸçœŸå®Œå…¨å¤Ÿç”¨äº†ã€‚
+### å› ä¸ºè¿™ä¸ªæ•™ç¨‹å°±æ˜¯è¿™ä¹ˆpushä¸Šæ¥çš„ã€‚
 
-### 3.5 ·ÖÖ§ branch
-#### Ê²Ã´ÊÇ·ÖÖ§£¿
+### 3.5 åˆ†æ”¯ branch
+#### ä»€ä¹ˆæ˜¯åˆ†æ”¯ï¼Ÿ
 
-#### ÈçºÎ²Ù×÷·ÖÖ§£¿
+#### å¦‚ä½•æ“ä½œåˆ†æ”¯ï¼Ÿ
